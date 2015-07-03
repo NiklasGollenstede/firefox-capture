@@ -1,0 +1,41 @@
+{
+  "title": "capture",
+  "name": "capture",
+  "version": "0.0.1",
+  "description": " ",
+  "main": "main.js",
+  "author": "Niklas Gollenstede",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "???",
+
+  "preferences": [
+    {
+      "name": "hotkey",
+      "title": "hotkey",
+      "type": "string",
+      "value": "f9"
+    }, {
+      "name": "ffmpegExe",
+      "title": "ffmpegExe",
+      "type": "file",
+      "value": "C:\\Program Files\\ffmpeg\\bin\\ffmpeg.exe"
+    }, {
+      "name": "ffmpegArgs",
+      "title": "ffmpegArgs",
+      "type": "string",
+      "value": "-loglevel error -hide_banner -nostats -y -f dshow -video_size 1920x1080 -framerate 30 -i video=\"screen-capture-recorder\" -vcodec libx264 -crf 0 -preset ultrafast"
+    }, {
+      "name": "outputFolder",
+      "title": "outputFolder",
+      "type": "directory",
+      "value": "D:\\Desktop"
+    }, {
+      "name": "format",
+      "title": "format",
+      "type": "string",
+      "value": "mp4"
+    }
+  ]
+}
